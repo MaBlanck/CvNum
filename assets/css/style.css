@@ -1,47 +1,184 @@
+body {
+    background: hsla(0, 0%, 0%, 1);
 
+background: linear-gradient(135deg, hsla(0, 0%, 0%, 1) 0%, hsla(208, 33%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(0, 0%, 0%, 1) 0%, hsla(208, 33%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(0, 0%, 0%, 1) 0%, hsla(208, 33%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#293f52", GradientType=1 );
+}
 /*-------------TITRES---------
 -----------------------------------------------------*/
-h1 {
+/*h1 {
     margin-top: 0%;
     margin-bottom: 0%;
     font-family: url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet") ;
-}
+}*/
 
 h2 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-family: url(../font/Merriweather-Regular.ttf);
+    font-family: 'Gloria Hallelujah', cursive;
     color: #fff;
+    font-size: 30px;
 }
-/*------------------class---------------
------------------------------------------------------*/
+.languageTitle {
+   margin-right: 80%;
+   color: #bbb;
+   font-style: italic;
+   font-family: 'Gloria Hallelujah', cursive;
+}
+.languageTitle2 {
+    margin-right: 90%;
+    margin-top: 5%;
+    color: #bbb;
+   font-style: italic;
+   font-family: 'Gloria Hallelujah', cursive;
+}
+/*--------------------NAVBAR-------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+}
 
-.head {
-    background-color: #250902;
+nav{
+    width: 50%;
+    height: 60px;
+    float: left;
+    margin: 0;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    color: #fff
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    background-color: #293F52;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #bbb9a0;
+    font-weight: bold;
+    border-bottom: 2px solid #4e0911;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: #4e0911;
+    border-bottom: 2px solid #4e0911;
+}
+
+.sous{
+    display: none;
+    background-color:#293F52;
+    position: absolute;
+    width: 100%;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    font-size: 48px;
+    font-family: 'Merriweather', serif;
     width: 100%;
     height: 60px;
     float: left;
 }
 
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+.menu{
+    height: 60px;
+    background-color: black;
+}
+/*------------------class---------------
+-----------------------------------------------------*/
+
+.head {
+    background-color: black;
+    width: 50%;
+    height: 60px;
+    float: left;
+}
+/*
 .titleOne {
     padding-top: 5%;
+    background-color: #4e0911;
+    opacity: 0.9;
 }
 .movingStar {
     height: auto;
     width: auto;
     padding-top: 3%;
     padding-bottom: 3%;
+    background-color: #4e0911;
+    opacity: 0.9;
 }
+.devWeb {
+    background-color: #4e0911;
+    opacity: 0.9;
+} */
 .story {
-    margin-top: 3%;
     margin-left: 5%;
-    width: 50%;
-    height: 275px;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #ad2831;
+    margin-right: 5%;
+    width: 90%;
+    height: 350px;
+    background-color: #293F52;
     text-align: center;
     font-size: 17px;
+    color: #fdfffc;
+    border: 2px solid black;
+}
+.music {
+    float: left;  
+    width: 25%;
+    color: black;
+}
+.permaCulture {
+    float: left;  
+    width: 25%;
+    color: #fdfffc;
+}
+.clay {
+    float: left;  
+    width: 25%;
+    color: #fdfffc;
+}
+.litterature {
+    float: left;  
+    width: 25%;
     color: #fdfffc;
 }
 .phone {
@@ -62,67 +199,284 @@ h2 {
     float: left;
     width: 25%;
 }
-
+.logo{
+    background-image: url(../img/blason2.jpg);
+    background-color: black;
+    text-align: center;
+    margin-left: 50%;
+    width: 48px;
+    height: 60px;
+    border-image: 1px dashed #293F52;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #293F52;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 100;
+}
+.dot-off {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.language  > div {
+    width: 10%;
+    height:20px;
+    font-size: 30px;
+    color:  #bbb;
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.englishSpeak > div {
+    width: 10%;
+    height:20px;
+    font-size: 30px;
+    color:  #bbb;
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.story > p{
+    margin-top: 2px;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+.sell {
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-top: 30px;
+}
+.art {
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-top: 30px;
+}
+.btp {
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-top: 30px;
+}
+.devWeb {
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-top: 30px;
+}
+.graduate {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+    font-size: 17px;
+    color: #fdfffc;
+    border: 2px solid black;
+    background-color:#293F52;
+    opacity: 0.8;
+}
+.cap {
+    margin-top: 3%;
+    width: 50%;
+    height: 150px;
+    color: #bbb;
+    float: left;
+    text-decoration: underline;
+    border-right: 1px solid black;
+}
+.charpente {
+    width: 100%;
+    float: left;
+    height: 120px;
+    margin-top: 20px;
+}
+.laManu {
+    margin-top: 3%;
+    width: 49%;
+    height: 150px;
+    color: #bbb;
+    float: left;
+    text-decoration: underline;
+}
+.laManu2 {
+    width: 100%;
+    float: left;
+    height: 120px;
+    margin-top: 20px;
+    text-decoration: none;
+}
 /*------------------id---------------
 ---------------------------------------------*/
 #blockOne{
-    background-color: #ad2831;
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    float: left;
-}
-#presentation {
-    background-color:#4e0911 ;
-    width:calc(55% - 1%);
-    height: 500px;
-    float: left;
-    text-align: center;
-    border: 1px solid #fff;
+    margin-right: 2%;
     margin-left: 1%;
+    width: 96%;
+    height: 500px;
+    text-align: center;
+    float: left;
+    background-image: url(../img/fond.jpg);
+    border: solid #192732;
+    border-width: 1rem;
+    }
+#presentation {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: #41070E ;
+    width: 70%;
+    height: 450px;
+    float: left;
+    text-align: center;
+    border: solid #131e26;
+    border-width: 1rem;
 }
 #proCareer {
-    background-color: #971b22 ;
-    width: calc(45% - 1%);
-    height: 500px;
+    margin-left: 10%;
+    margin-right: 40%;
+    background-color:  #293F52 ;
+    width: 50%;
+    height: 300px;
     float: left;
     text-align: center;
-    border: 1px solid #fff;
+    margin-top: 50px;
+    border: solid #111a22;
+    border-width: 1rem;
 }
-#proExperience {
-    background-color: #ad2831;
-    width: calc(40% - 1%);
-    height: 500px;
+#formation {
+    margin-left: 20%;
+    margin-right: 5%;
+    background-color:#642734 ;
+    width: 75%;
+    height: 400px;
     float: left; 
     text-align: center;
-    border: 1px solid #fff;
-    margin-left: 1%;
+    margin-top: 50px;
+    border: solid #131d25;
+    border-width: 1rem;
 }
 #skills {
+    margin-left: 2%;
+    margin-right: 4%;
     background-color: #38040e;
-    width: calc(60% - 1%);
-    height: 500px;
+    width: 94%;
+    height: 350px;
     float: left;
     text-align: center;
-    border: 1px solid #fff;
+    margin-top: 75px;
+    border: solid #0d1419;
+    border-width: 1rem;
 }
-
-/*-------------------footer--------------
--------------------------------------------------*/
-footer {
-    background-color: #250902;
-    width: 100%;
-    height: 200px;
+#hobbies {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #642734 ;
+    width: 80%;
+    height: 320px;
     float: left;
-    border: 2px solid #fff;
+    text-align: center;
+    margin-top: 50px;
+    border: solid #070b0f;
+    border-width: 1rem;
+}
+#contact {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color:  #293F52 ;
+    width: 90%;
+    height: 150px;
+    float: left;
     position:  static;
     text-align: center;
     color: #fdfffc;
+    margin-top: 50px;
+    border: solid #0c1217;
+    border-width: 1rem;
 }
-hr{
-    margin:auto;
-    width: 20%;
-    height: 2px;
-    background-color: #250902;
-    border: none; 
+/*-------------------footer--------------
+-------------------------------------------------*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    float: left;
+    position:  static;
+    text-align: center;
+    color: #353535;
 }
+.legal {
+    width: 100%;
+    height: 100px;
+}
+/*---------------Fin Footer--------------*/
+header {
+    background-color: black;
+}
+
+ul > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+li > p {
+    position: relative;
+    width: auto;
+}
+#hobbies .music ul li{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #bbb;
+    font-size: 25px;
+}
+#hobbies .permaCulture p {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #bbb;
+    font-size: 25px;
+}
+#hobbies .clay p {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #bbb;
+    font-size: 25px;
+}
+#hobbies .litterature p {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #bbb;
+    font-size: 25px;
+}
+/*-----------------ANIMATION-------------*/
+
+header {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }/*
+  #blockOne {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
